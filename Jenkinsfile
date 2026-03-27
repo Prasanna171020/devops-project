@@ -32,7 +32,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.build("docimage:${env.BUILD_ID}", "-f Dockerfile .")
+                    docker.build("docimage:${env.BUILD_ID}", "-f docker/Dockerfile .")
                 }
                 sh '''
                     docker stop doccont || true

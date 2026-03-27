@@ -1,7 +1,0 @@
-target/
-*.jar
-*.war
-*.zip
-*.log
-terraform.tfstate*
-.terraform/
