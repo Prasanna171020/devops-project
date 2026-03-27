@@ -2,6 +2,6 @@ version: '3.8'
 services:
   app:
     build: .
-    container_name: cont-1
+    container_name: doccont
     ports:
       - "8080:8080"
